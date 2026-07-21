@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modular Image Slider Library</title>
+<link rel="stylesheet" href="slider.css">
+</head>
+<body>
+
+  <div class="slider" data-slider>
+    <div class="slider__track" data-track>
+      <div class="slider__slide"><img src="https://picsum.photos/id/1015/1200/600" alt="Mountain river valley"></div>
+      <div class="slider__slide"><img src="https://picsum.photos/id/1025/1200/600" alt="Dog portrait"></div>
+      <div class="slider__slide"><img src="https://picsum.photos/id/1035/1200/600" alt="Forest path"></div>
+      <div class="slider__slide"><img src="https://picsum.photos/id/1043/1200/600" alt="Desert road"></div>
+    </div>
+
+    <button class="slider__arrow slider__arrow--prev" data-prev aria-label="Previous slide">&#10094;</button>
+    <button class="slider__arrow slider__arrow--next" data-next aria-label="Next slide">&#10095;</button>
+
+    <div class="slider__dots" data-dots></div>
+  </div>
+
+  <script src="slider.js"></script>
+  <script>
+    new ImageSlider(document.querySelector('[data-slider]'));
+  </script>
+</body>
+</html>
